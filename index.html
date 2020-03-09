@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Su Kovo 11-ąja!</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <div id="zinute" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p class="mt-3" id="faktas"></p>
+            <img src="" alt="" id="paveikslas">
+        </div>
+
+    </div>
+
+    <div class="text-center">
+        <div class="maluneliai" id="maluneliai">
+
+            <div class="d-flex justify-content-center">
+                <img src="IMG/malunelis_geltonas.png" alt="Geltona" class="malunelis m-2" id="1">
+                <img src="IMG/malunelis_geltonas.png" alt="Geltona" class="malunelis m-2" id="2">
+                <img src="IMG/malunelis_geltonas.png" alt="Geltona" class="malunelis m-2" id="3">
+                <img src="IMG/malunelis_geltonas.png" alt="Geltona" class="malunelis m-2" id="4">
+                <img src="IMG/malunelis_geltonas.png" alt="Geltona" class="malunelis m-2" id="5">
+            </div>
+            <div class="d-flex justify-content-center">
+                <img src="IMG/malunelis_zalias.png" alt="Žalia" class="malunelis m-2" id="6">
+                <img src="IMG/malunelis_zalias.png" alt="Žalia" class="malunelis m-2" id="7">
+                <img src="IMG/malunelis_zalias.png" alt="Žalia" class="malunelis m-2" id="8">
+                <img src="IMG/malunelis_zalias.png" alt="Žalia" class="malunelis m-2" id="9">
+                <img src="IMG/malunelis_zalias.png" alt="Žalia" class="malunelis m-2" id="10">
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <img src="IMG/malunelis_raudonas.png" alt="Raudona" class="malunelis m-2" id="11">
+                <img src="IMG/malunelis_raudonas.png" alt="Raudona" class="malunelis m-2" id="12">
+                <img src="IMG/malunelis_raudonas.png" alt="Raudona" class="malunelis m-2" id="13">
+                <img src="IMG/malunelis_raudonas.png" alt="Raudona" class="malunelis m-2" id="14">
+                <img src="IMG/malunelis_raudonas.png" alt="Raudona" class="malunelis m-2" id="15">
+
+            </div>
+
+
+            <h1 class="tekstas">
+                <span class="geltona">S</span>
+                <span class="geltona">u</span>
+                <span> </span>
+                <span class="zalia">K</span>
+                <span class="zalia">o</span>
+                <span class="zalia">v</span>
+                <span class="zalia">o</span>
+                <span> </span>
+                <span class="raudona">1</span>
+                <span class="raudona">1</span>
+                <span class="raudona">-</span>
+                <span class="raudona">t</span>
+                <span class="raudona">ą</span>
+                <span class="raudona">j</span>
+                <span class="raudona">a</span>
+                <span class="raudona">!</span>
+            </h1>
+            
+            <h6 class="mt-5"><b>Išsirink malūnėlį!</b></h6>
+
+        </div>
+    </div>
+
+
+    <script>
+
+        var zinute = document.getElementById("zinute");
+
+        var faktas1 = document.getElementById("1");
+        var faktas2 = document.getElementById("2");
+        var faktas3 = document.getElementById("3");
+        var faktas4 = document.getElementById("4");
+        var faktas5 = document.getElementById("5");
+        var faktas6 = document.getElementById("6");
+        var faktas7 = document.getElementById("7");
+        var faktas8 = document.getElementById("8");
+        var faktas9 = document.getElementById("9");
+        var faktas10 = document.getElementById("10");
+        var faktas11 = document.getElementById("11");
+        var faktas12 = document.getElementById("12");
+        var faktas13 = document.getElementById("13");
+        var faktas14 = document.getElementById("14");
+        var faktas15 = document.getElementById("15");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        faktas1.addEventListener("click", function() {
+            zinute.style.display = "block";
+            document.getElementById("paveikslas").src = "";
+            document.getElementById("faktas").innerHTML = "Kovo 11 d. - Lietuvos Nepriklausomybės atkūrimo diena.";
+        });
+
+        faktas2.addEventListener("click", function() {
+            zinute.style.display = "block";
+            document.getElementById("paveikslas").src = "";
+            document.getElementById("faktas").innerHTML = "1990 m. kovo 11 d. Lietuvos Respublikos Aukščiausioji Taryba pasirašė Lietuvos Nepriklausomybės Atstatymo aktą.";
+        });
+
+        faktas3.addEventListener("click", function() {
+            zinute.style.display = "block";
+            document.getElementById("paveikslas").src = "";
+            document.getElementById("faktas").innerHTML = "Lietuvos nepriklausomybės atstatymo akte remiamasi 1918 m. vasario 16 d. pasirašytu Lietuvos nepriklausomybės aktu, kuris niekada nenustojo teisinės galios.";
+        });
+        
+        faktas4.addEventListener("click", function() {
+            zinute.style.display = "block";
+            document.getElementById("paveikslas").src = "";
+            document.getElementById("faktas").innerHTML = "Aukščiausiosios Tarybos-Atkuriamojo Seimo priimtas Nepriklausomybės Atsatatymo Aktas baigė pusę amžiaus trukusią Lietuvos valstybės aneksiją.";
+        });
+
+        faktas5.addEventListener("click", function() {
+            zinute.style.display = "block";
+            document.getElementById("paveikslas").src = "";
+            document.getElementById("faktas").innerHTML = "1990 m. kovo 11 d. įvyko pirmasis Aukščiausiosios Tarybos posėdis, kuriame dauguma balsų buvo išrinktas jos pirmininkas – Vytautas Landsbergis.";
+        });
+        
+        faktas6.addEventListener("click", function() {
+            zinute.style.display = "block";
+            document.getElementById("faktas").innerHTML = "Kovo 11-osios Aktas.";
+            document.getElementById("paveikslas").src = "IMG/img1.png";
+        });
+        
+        faktas7.addEventListener("click", function() {
+            zinute.style.display = "block";
+            document.getElementById("paveikslas").src = "";
+            document.getElementById("faktas").innerHTML = "Vėlų kovo 11-osios vakarą ką tik išrinktas Aukščiausiosios Tarybos-Atkuriamojo seimo pirmininkas Vytautas Landsbergis paskelbė vardinio balsavimo dėl Lietuvos nepriklausomybės atkūrimo rezultatus: „Už“ – 124 deputatai, prieš nebalsavo niekas, susilaikė 6.";
+        });
+        
+        faktas8.addEventListener("click", function() {
+            zinute.style.display = "block";
+            document.getElementById("paveikslas").src = "";
+            document.getElementById("faktas").innerHTML = "1993 m. Nepriklausomybės Atstatymo Aktas buvo perduotas Prezidentui Algirdui Brazauskas, o šis jį įteikė saugoti Valstybės archyvui.";
+        });
+        
+        faktas9.addEventListener("click", function() {
+            zinute.style.display = "block";
+            document.getElementById("faktas").innerHTML = "5 eurų moneta, skirta Lietuvos nepriklausomybės atkūrimo 25-mečiui.";
+            document.getElementById("paveikslas").src = "IMG/img2.png";
+        });
+        
+        faktas10.addEventListener("click", function() {
+            zinute.style.display = "block";
+            document.getElementById("faktas").innerHTML = "1995 m. buvo išleistas pašto ženklų blokas, sudarytas iš keturių ženklų (25 x 30 mm), sukurtas dailininko Arvydo Každailio.";
+            document.getElementById("paveikslas").src = "IMG/img4.jpg";
+        });
+        
+        faktas11.addEventListener("click", function() {
+            zinute.style.display = "block";
+            document.getElementById("faktas").innerHTML = "Nepriklausomybės atkūrimo dienai skirta Lietuvos banko 50 litų moneta (1995 m.)";
+            document.getElementById("paveikslas").src = "IMG/img3.png";
+        });
+        
+        faktas12.addEventListener("click", function() {
+            zinute.style.display = "block";
+            document.getElementById("faktas").innerHTML = "Po 50 sovietinės okupacijos  metų Lietuva vėl atgavo nepriklausomybę, o Kovo 11-oji tapo lietuvių nacionaline švente.";
+            document.getElementById("paveikslas").src = "";
+        });
+        
+        faktas13.addEventListener("click", function() {
+            zinute.style.display = "block";
+            document.getElementById("faktas").innerHTML = "Lietuvos paštas išleido pašto ženklus, skirtus Kovo 11–ajai. Pirmasis ženklas buvo išleistas 1991 m. (dailininkė Margarita Jasilionytė).";
+            document.getElementById("paveikslas").src = "IMG/img5.jpg";
+        });
+        
+        faktas14.addEventListener("click", function() {
+            zinute.style.display = "block";
+            document.getElementById("faktas").innerHTML = "Lietuvos paštas pristatė pašto voką,  skirtas pirmosioms Kovo 11–osios metinėms. (dailininkė Margarita Jasilionytė).";
+            document.getElementById("paveikslas").src = "IMG/img6.jpg";
+        });
+        
+        faktas15.addEventListener("click", function() {
+            zinute.style.display = "block";
+            document.getElementById("faktas").innerHTML = "Kovo 11-oji – Lietuvos nepriklausomybės atkūrimo diena (nuotr. LCVA).";
+            document.getElementById("paveikslas").src = "IMG/img7.jpg";
+        });
+        
+
+        
+        span.onclick = function() {
+            zinute.style.display = "none";
+        }
+
+
+        window.onclick = function(event) {
+            if (event.target == zinute) {
+                zinute.style.display = "none";
+            }
+        }
+        
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</body></html>
