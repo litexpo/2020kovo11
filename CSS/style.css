@@ -1,212 +1,197 @@
 html,
 body {
-    background-color: #006a44;
-    height: 100%;
+  background-color: #006a44;
+  height: 100%;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto 0;
-    text-align: center;
-    overflow: hidden;
-    background-image: url("../IMG/img8.JPG");
-    background-repeat: no-repeat;
-    -ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+  text-align: center;
+  overflow: hidden;
+  background-image: url("../IMG/img8.JPG");
+  background-repeat: no-repeat;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 .malunelis {
+  width: 80px;
 
-    width: 80px;
-
-    -webkit-animation: spin 10s linear infinite;
-    -moz-animation: spin 10s linear infinite;
-    -o-animation: spin 10s linear infinite;
-    animation: spin 10s linear infinite;
-    /*-webkit-animation-play-state: paused;
+  -webkit-animation: spin 10s linear infinite;
+  -moz-animation: spin 10s linear infinite;
+  -o-animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite;
+  /*-webkit-animation-play-state: paused;
     -moz-animation-play-state: paused;
     -o-animation-play-state: paused;
     animation-play-state: paused;*/
-
 }
 
 .malunelis:hover {
-
-    -webkit-animation: spin 1s linear infinite;
-    -moz-animation: spin 1s linear infinite;
-    -o-animation: spin 1s linear infinite;
-    animation: spin 1s linear infinite;
-   /* -webkit-animation-play-state: running;
+  -webkit-animation: spin 1s linear infinite;
+  -moz-animation: spin 1s linear infinite;
+  -o-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  /* -webkit-animation-play-state: running;
     -moz-animation-play-state: running;
     -o-animation-play-state: running;
     animation-play-state: running;*/
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .maluneliai {
-    
-    margin: 0 auto;
-    background-color: mediumseagreen;
-    padding: 60px;
-    
+  margin: 0 auto;
+  background-color: mediumseagreen;
+  padding: 60px;
 }
 
 @keyframes spin {
-    100% {
-
-        -webkit-transform: rotate(360deg);
-        -moz-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        transform: rotate(360deg)
-    }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
-
 #paveikslas {
-    
-    width: 30%;
-    margin: 0 auto;
-    
+  width: 30%;
+  margin: 0 auto;
 }
 
 /*************** TEKSTAS ***************/
 
-@import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
-
+@import url(https://fonts.googleapis.com/css?family=Signika:700, 300, 600);
 
 h1 {
-    margin-top: 15px;
-    font-size: 4em;
-    font: bold 'Signika', sans-serif;
-    user-select: none;
+  margin-top: 15px;
+  font-size: 4em;
+  font: bold "Signika", sans-serif;
+  user-select: none;
 }
 
 h1 span {
-    display: inline-block;
-    animation: float .9s ease-in-out infinite;
+  display: inline-block;
+  animation: float 0.9s ease-in-out infinite;
 }
 
 h6 {
-    
-    font: bold 'Signika', sans-serif;
-    font-size: 1em;
-    color: #006a44;
-    
+  font: bold "Signika", sans-serif;
+  font-size: 1em;
+  color: #006a44;
 }
 
 @keyframes float {
+  0%,
+  100% {
+    transform: none;
+  }
 
-    0%,
-    100% {
-        transform: none;
-    }
+  33% {
+    transform: translateY(-1px) rotate(-2deg);
+  }
 
-    33% {
-        transform: translateY(-1px) rotate(-2deg);
-    }
-
-    66% {
-        transform: translateY(1px) rotate(2deg);
-    }
+  66% {
+    transform: translateY(1px) rotate(2deg);
+  }
 }
 
 h1 span:nth-child(1) {
-    color: #fdb913;
-    text-shadow: 1px 1px #f1c83c;
+  color: #fdb913;
+  text-shadow: 1px 1px #f1c83c;
 }
 
 h1 span:nth-child(2) {
-    animation-delay: .05s;
-    color: #fdb913;
-    text-shadow: 1px 1px #f1c83c;
+  animation-delay: 0.05s;
+  color: #fdb913;
+  text-shadow: 1px 1px #f1c83c;
 }
 
 h1 span:nth-child(3) {
-    animation-delay: .1s;
+  animation-delay: 0.1s;
 }
 
 h1 span:nth-child(4) {
-    animation-delay: .15s;
-    color: #006a44;
-    text-shadow: 1px 1px #016C38;
+  animation-delay: 0.15s;
+  color: #006a44;
+  text-shadow: 1px 1px #016c38;
 }
 
 h1 span:nth-child(5) {
-    animation-delay: .2s;
-    color: #006a44;
-    text-shadow: 1px 1px #016C38;
+  animation-delay: 0.2s;
+  color: #006a44;
+  text-shadow: 1px 1px #016c38;
 }
 
 h1 span:nth-child(6) {
-    animation-delay: .25s;
-    color: #006a44;
-    text-shadow: 1px 1px #016C38;
+  animation-delay: 0.25s;
+  color: #006a44;
+  text-shadow: 1px 1px #016c38;
 }
 
 h1 span:nth-child(7) {
-    animation-delay: .3s;
-    color: #006a44;
-    text-shadow: 1px 1px #016C38;
+  animation-delay: 0.3s;
+  color: #006a44;
+  text-shadow: 1px 1px #016c38;
 }
 
 h1 span:nth-child(8) {
-    animation-delay: .35s;
+  animation-delay: 0.35s;
 }
 
 h1 span:nth-child(9) {
-    animation-delay: .4s;
-    color: #c1272d;
-    text-shadow: 1px 1px #e55643;
+  animation-delay: 0.4s;
+  color: #c1272d;
+  text-shadow: 1px 1px #e55643;
 }
 
 h1 span:nth-child(10) {
-    animation-delay: .45s;
-    color: #c1272d;
-    text-shadow: 1px 1px #e55643;
+  animation-delay: 0.45s;
+  color: #c1272d;
+  text-shadow: 1px 1px #e55643;
 }
 
 h1 span:nth-child(11) {
-    animation-delay: .5s;
-    color: #c1272d;
-    text-shadow: 1px 1px #e55643;
+  animation-delay: 0.5s;
+  color: #c1272d;
+  text-shadow: 1px 1px #e55643;
 }
 
 h1 span:nth-child(12) {
-    animation-delay: .55s;
-    color: #c1272d;
-    text-shadow: 1px 1px #e55643;
+  animation-delay: 0.55s;
+  color: #c1272d;
+  text-shadow: 1px 1px #e55643;
 }
 
 h1 span:nth-child(13) {
-    animation-delay: .6s;
-    color: #c1272d;
-    text-shadow: 1px 1px #e55643;
+  animation-delay: 0.6s;
+  color: #c1272d;
+  text-shadow: 1px 1px #e55643;
 }
 
 h1 span:nth-child(14) {
-    animation-delay: .65s;
-    color: #c1272d;
-    text-shadow: 1px 1px #e55643;
+  animation-delay: 0.65s;
+  color: #c1272d;
+  text-shadow: 1px 1px #e55643;
 }
 
 h1 span:nth-child(15) {
-    animation-delay: .7s;
-    color: #c1272d;
-    text-shadow: 1px 1px #e55643;
+  animation-delay: 0.7s;
+  color: #c1272d;
+  text-shadow: 1px 1px #e55643;
 }
 
 h1 span:nth-child(16) {
-    animation-delay: .75s;
-    color: #c1272d;
-    text-shadow: 1px 1px #e55643;
+  animation-delay: 0.75s;
+  color: #c1272d;
+  text-shadow: 1px 1px #e55643;
 }
-
 
 /* The Modal (background) */
 .modal {
@@ -219,8 +204,8 @@ h1 span:nth-child(16) {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
@@ -231,7 +216,6 @@ h1 span:nth-child(16) {
   border: 1px solid #888;
   width: 80%;
 }
-
 
 .close {
   color: #aaaaaa;
@@ -245,4 +229,10 @@ h1 span:nth-child(16) {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  body {
+    font-size: 2rem;
+  }
 }
